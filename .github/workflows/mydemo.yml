@@ -40,12 +40,12 @@ jobs:
              sudo npm install -g aws-cdk
              sudo pip3 install aws-cdk.cdk
              sudo pip3 install awscli
-             sudo aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
-             sudo aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
-             sudo aws configure set region $AWS_DEFAULT_REGION
-             sudo python3 -m venv .venv
-             sudo source .venv/bin/activate
+             aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+             aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+             aws configure set region $AWS_DEFAULT_REGION
+             python3 -m venv .venv
+             source .venv/bin/activate
              sudo pip3 install -r requirements.txt
              sudo pip3 install boto3
-             sudo cdk ls
-             sudo cdk synth
+             cdk ls
+             cdk synth
