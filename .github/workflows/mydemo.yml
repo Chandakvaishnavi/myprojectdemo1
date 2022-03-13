@@ -42,9 +42,9 @@ jobs:
              source .venv/bin/activate
              sudo pip3 install aws-cdk.cdk
              sudo pip3 install awscli
-             aws configure set aws_access_key_id AKIAY6ADP4ZCDBRIH7VA
-             aws configure set aws_secret_access_key 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
+             aws configure set aws_access_key_id ${{secrets.AWS_ACCESS_KEY_ID}}
+             aws configure set aws_secret_access_key ${{secrets.DFXhZSjdWtCC1dRSvSX7KCGP6Q74/nGwBA3bWBlO}}
              aws configure set region us-east-1
              pip3 install -r requirements.txt
-             cdk ls
+             cdk diff
              
