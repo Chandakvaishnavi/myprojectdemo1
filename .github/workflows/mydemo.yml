@@ -30,6 +30,27 @@ jobs:
         run: |
              sudo apt-get -yq update
              sudo apt update
+             apt install -y python3-venv
+             pip3 install --upgrade pip
+             pip3 install --upgrade virtualenv
+             python3 -V
+             export PYTHONPATH=/usr/local/bin/python3
+             DEBIAN_FRONTEND=noninteractive apt install -y nodejs
+             DEBIAN_FRONTEND=noninteractive apt install -y npm
+             npm install -g aws-cdk
+             pip3 install aws-cdk.cdk
+             pip3 install awscli
+             aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+             aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+             aws configure set region $AWS_DEFAULT_REGION
+             aws configure set aws_session_token $AWS_SESSION_TOKEN
+             python3 -m venv .venv
+             source .venv/bin/activate
+             pip3 install -r requirements.txt
+             pip3 install boto3
+             cdk ls
+             cdk synth
+    
              
 
     
