@@ -47,5 +47,4 @@ jobs:
              aws configure set region us-east-1
              sudo pip3 install -r requirements.txt
              sudo pip3 install boto3
-             cdk ls
-             cdk synth
+             python3
