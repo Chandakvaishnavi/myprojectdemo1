@@ -33,7 +33,7 @@ jobs:
              sudo apt install -y python3-venv
              sudo pip3 install --upgrade pip
              sudo pip3 install --upgrade virtualenv
-             sudo python3 -V
+             python3 -V
              sudo export PYTHONPATH=/usr/local/bin/python3
              sudo DEBIAN_FRONTEND=noninteractive apt install -y nodejs
              sudo DEBIAN_FRONTEND=noninteractive apt install -y npm
