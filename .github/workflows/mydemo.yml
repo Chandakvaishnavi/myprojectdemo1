@@ -34,7 +34,7 @@ jobs:
              sudo pip3 install --upgrade pip
              sudo pip3 install --upgrade virtualenv
              python3 -V
-             sudo export PYTHONPATH=/usr/local/bin/python3
+             export PYTHONPATH=/usr/local/bin/python3
              sudo DEBIAN_FRONTEND=noninteractive apt install -y nodejs
              sudo DEBIAN_FRONTEND=noninteractive apt install -y npm
              sudo npm install -g aws-cdk
