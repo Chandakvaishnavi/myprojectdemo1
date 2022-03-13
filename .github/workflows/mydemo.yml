@@ -38,9 +38,8 @@ jobs:
              sudo DEBIAN_FRONTEND=noninteractive apt install -y nodejs
              sudo DEBIAN_FRONTEND=noninteractive apt install -y npm
              sudo npm install -g aws-cdk
-             sudo pip3 install aws-cdk.cdk
+             sudo pip3 install aws-cdk
              sudo pip3 install awscli
-             sudo pip3 install --upgrade aws-cdk.core
              aws configure set aws_access_key_id AKIAY6ADP4ZCDBRIH7VA
              aws configure set aws_secret_access_key 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
              aws configure set region us-east-1
