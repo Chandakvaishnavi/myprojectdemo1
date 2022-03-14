@@ -47,4 +47,4 @@ jobs:
              aws configure set region ${{secrets.AWS_DEFAULT_REGION}}
              pip3 install -r requirements.txt
              cdk ls
-             
+             cdk synth
